@@ -1,0 +1,78 @@
+# ==========================
+# 기본 파이썬/Flask 환경
+# ==========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# 가상환경 폴더 (절대 복사 금지)
+.venv/
+venv/
+env/
+ENV/
+
+# 패키지 캐시 / 빌드 산출물
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# ==========================
+# IDE / 개발 도구 관련
+# ==========================
+.idea/
+.vscode/
+.pytest_cache/
+.coverage
+*.cover
+*.log
+*.bak
+*.swp
+.DS_Store
+
+# ==========================
+# 환경 설정 / 보안 파일
+# ==========================
+.env
+.env.local
+.env.dev
+.env.prod
+*.pem
+*.key
+*.crt
+
+# ==========================
+# 테스트 및 문서
+# ==========================
+tests/
+test/
+docs/
+examples/
+notebooks/
+
+# ==========================
+# 로컬 데이터 / 임시 파일
+# ==========================
+*.db
+*.sqlite
+*.sqlite3
+tmp/
+temp/
+data/
+uploads/
+__snapshot__/
+cache/
+*.ipynb_checkpoints/
+
+# ==========================
+# 기타 빌드/운영 환경
+# ==========================
+docker-compose.yml
+Dockerfile*
+README.md
+LICENSE
