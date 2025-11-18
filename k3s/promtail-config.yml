@@ -32,4 +32,4 @@ data:
               - localhost
             labels:
               job: system
-              __path__: /var/log/*.log
+              __path__: /tmp/log/*.log
