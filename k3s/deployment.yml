@@ -27,6 +27,17 @@ spec:
       - name: app
         image: helena73/recommend-service:latest
         imagePullPolicy: Always
+
+        command: ["gunicorn"]
+        args:
+          - "app:app"
+          - "-b"
+          - "0.0.0.0:5000"
+          - "--access-logfile"
+          - "/tmp/log/app/access.log"  # Promtail
+          - "--error-logfile"
+          - "/tmp/log/app/error.log"
+
         ports:
         - containerPort: 5000
           name: http
